@@ -26,7 +26,7 @@ name = input('Enter Your Name: ')
 c = Customer(name)
 while True:
     print('D - Deposit \n W - Withdrawal \n E - Exit')
-    option = input('Choose your option')
+    option = input('Choose your option: ')
     if option.lower() == 'd':
         amount = float(input('Enter amount to deposit: '))
         c.deposit(amount)
@@ -37,5 +37,5 @@ while True:
         print('Thanks for banking with us')
         break
     else:
-        print('Your option is invalid, please chose valid option to proceed.')
+        print('Your option is invalid, please choose valid option to proceed.')
 
